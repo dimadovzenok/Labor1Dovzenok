@@ -63,7 +63,6 @@ namespace Labor1Dovzenok
         {
 
         }
-
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             OpenFileDialog OpenDlg = new OpenFileDialog();
@@ -120,18 +119,7 @@ namespace Labor1Dovzenok
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SaveFileDialog SaveDlg = new SaveFileDialog();
-            if(SaveDlg.ShowDialog()== DialogResult.OK)
-            {
-                StreamWriter Writer = new StreamWriter(SaveDlg.FileName);
-
-                for(int i = 0; i < listBox2.Items.Count; i++)
-                {
-                    Writer.WriteLine((string)listBox2.Items[i]);
-                }
-                Writer.Close();
-            }
-            SaveDlg.Dispose();
+            
         }
         private void button14_Click(object sender, EventArgs e)
         {
@@ -148,7 +136,7 @@ namespace Labor1Dovzenok
             listBox1.BeginUpdate();
             string[] Strings = richTextBox1.Text.Split(new char[] { '\n', '\t', ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            foreach(string s in Strings)
+            foreach (string s in Strings)
             {
                 string Str = s.Trim();
                 if (Str == String.Empty) continue;
@@ -169,21 +157,121 @@ namespace Labor1Dovzenok
         {
             listBox3.Items.Clear();
             string Find = textBox1.Text;
-            if(checkBox1.Checked)
+            if (checkBox1.Checked)
             {
-                foreach( string String in listBox1.Items)
+                foreach (string String in listBox1.Items)
                 {
                     if (String.Contains(Find)) listBox3.Items.Add(String);
 
                 }
             }
-            if(checkBox2.Checked)
+            if (checkBox2.Checked)
             {
-                foreach(string String in listBox2.Items)
+                foreach (string String in listBox2.Items)
                 {
                     if (String.Contains(Find)) listBox3.Items.Add(String);
                 }
             }
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form2 AddRec = new Form2();
+
+            AddRec.Owner = this;
+            AddRec.ShowDialog();
+        }
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+            richTextBox1.Clear();
+            textBox1.Clear();
+
+
+
+        }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            for (int i = listBox1.Items.Count - 1; i >= 0; i--)
+            {
+                if (listBox1.GetSelected(i)) listBox1.Items.RemoveAt(i);
+            }
+            for (int i = listBox2.Items.Count - 1; i >= 0; i--)
+            {
+                if (listBox2.GetSelected(i)) listBox2.Items.RemoveAt(i);
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox2.BeginUpdate();
+            foreach (object Item in listBox1.SelectedItems)
+            {
+                listBox2.Items.Add(Item);
+            }
+            listBox2.EndUpdate();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Clear();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            listBox1.BeginUpdate();
+            foreach (object Item in listBox2.SelectedItems)
+            {
+                listBox1.Items.Add(Item);
+            }
+            listBox1.EndUpdate();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.AddRange(listBox1.Items);
+            listBox1.Items.Clear();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+                listBox1.Items.AddRange(listBox2.Items);
+                listBox2.Items.Clear();
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog SaveDlg = new SaveFileDialog();
+            if (SaveDlg.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter Writer = new StreamWriter(SaveDlg.FileName);
+
+                for (int i = 0; i < listBox2.Items.Count; i++)
+                {
+                    Writer.WriteLine((string)listBox2.Items[i]);
+                }
+                Writer.Close();
+            }
+            SaveDlg.Dispose();
 
         }
     }
