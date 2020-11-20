@@ -41,6 +41,7 @@ namespace Labor1Dovzenok
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button15 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -77,7 +78,6 @@ namespace Labor1Dovzenok
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button15 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -114,6 +114,16 @@ namespace Labor1Dovzenok
             this.panel1.Size = new System.Drawing.Size(750, 432);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(363, 371);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(107, 51);
+            this.button15.TabIndex = 28;
+            this.button15.Text = "Сохранить";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // groupBox1
             // 
@@ -257,6 +267,7 @@ namespace Labor1Dovzenok
             this.button9.TabIndex = 17;
             this.button9.Text = "Сортировать";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -296,6 +307,7 @@ namespace Labor1Dovzenok
             this.button5.TabIndex = 13;
             this.button5.Text = "Сортировать";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -416,7 +428,7 @@ namespace Labor1Dovzenok
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(540, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(534, 3);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(190, 310);
             this.richTextBox1.TabIndex = 3;
@@ -487,16 +499,6 @@ namespace Labor1Dovzenok
             this.toolStripMenuItem4.Size = new System.Drawing.Size(176, 22);
             this.toolStripMenuItem4.Text = "Выход ";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(363, 371);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(107, 51);
-            this.button15.TabIndex = 28;
-            this.button15.Text = "Сохранить";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // Form1
             // 
