@@ -17,6 +17,7 @@ namespace Labor1Dovzenok
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Текстовый редактор";
         }
 
         private void Form1_Load(object sender, EventArgs e)

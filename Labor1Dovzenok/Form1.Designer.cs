@@ -117,7 +117,7 @@ namespace Labor1Dovzenok
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(363, 371);
+            this.button15.Location = new System.Drawing.Point(373, 312);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(107, 51);
             this.button15.TabIndex = 28;
@@ -143,6 +143,8 @@ namespace Labor1Dovzenok
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Checked = true;
+            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(161, 58);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(72, 17);
@@ -190,9 +192,9 @@ namespace Labor1Dovzenok
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(184, 90);
+            this.button12.Location = new System.Drawing.Point(161, 90);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(62, 51);
+            this.button12.Size = new System.Drawing.Size(85, 51);
             this.button12.TabIndex = 22;
             this.button12.Text = "Поиск";
             this.button12.UseVisualStyleBackColor = true;
@@ -210,7 +212,7 @@ namespace Labor1Dovzenok
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(130, 21);
             this.comboBox2.TabIndex = 26;
-            this.comboBox2.Text = "Сортировка по";
+            this.comboBox2.Text = "Сортировка по ...";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox1
@@ -226,12 +228,12 @@ namespace Labor1Dovzenok
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(123, 21);
             this.comboBox1.TabIndex = 25;
-            this.comboBox1.Text = "Сортировка по";
+            this.comboBox1.Text = "Сортировка по ...";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(363, 312);
+            this.button14.Location = new System.Drawing.Point(373, 229);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(107, 51);
             this.button14.TabIndex = 24;
@@ -241,7 +243,7 @@ namespace Labor1Dovzenok
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(363, 251);
+            this.button13.Location = new System.Drawing.Point(373, 142);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(107, 51);
             this.button13.TabIndex = 23;
@@ -251,7 +253,7 @@ namespace Labor1Dovzenok
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(272, 244);
+            this.button10.Location = new System.Drawing.Point(246, 244);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(85, 21);
             this.button10.TabIndex = 18;
@@ -261,7 +263,7 @@ namespace Labor1Dovzenok
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(272, 217);
+            this.button9.Location = new System.Drawing.Point(246, 217);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(85, 21);
             this.button9.TabIndex = 17;
@@ -271,7 +273,7 @@ namespace Labor1Dovzenok
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(165, 244);
+            this.button8.Location = new System.Drawing.Point(130, 244);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(93, 21);
             this.button8.TabIndex = 16;
@@ -281,7 +283,7 @@ namespace Labor1Dovzenok
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(165, 217);
+            this.button7.Location = new System.Drawing.Point(130, 217);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(93, 21);
             this.button7.TabIndex = 15;
@@ -291,7 +293,7 @@ namespace Labor1Dovzenok
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(75, 244);
+            this.button6.Location = new System.Drawing.Point(20, 243);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(84, 21);
             this.button6.TabIndex = 14;
@@ -301,7 +303,7 @@ namespace Labor1Dovzenok
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(75, 217);
+            this.button5.Location = new System.Drawing.Point(20, 217);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(84, 21);
             this.button5.TabIndex = 13;

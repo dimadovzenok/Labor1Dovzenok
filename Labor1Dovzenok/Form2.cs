@@ -15,6 +15,7 @@ namespace Labor1Dovzenok
         public Form2()
         {
             InitializeComponent();
+            this.Text = "Добавление слов";
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -41,6 +42,4 @@ namespace Labor1Dovzenok
             this.Hide();
         }
     }
-
-
 }
